@@ -79,48 +79,49 @@ const modalContent = document.getElementById('modalContent');
 // Service details data
 const serviceDetails = {
     1: {
-        title: "AC Repair & Service",
-        image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        description: "Our expert technicians provide comprehensive AC repair services for all brands and types of air conditioners. We use genuine spare parts and follow industry best practices to ensure your AC works like new.",
-        features: [
-            "Same-day service in most areas of Mumbai",
-            "Expert technicians with 5+ years experience",
-            "Genuine spare parts with 6 months warranty",
-            "Transparent pricing with no hidden charges",
-            "All brands: Daikin, LG, Samsung, Voltas, Blue Star, Hitachi, etc.",
-            "All types: Split AC, Window AC, Cassette AC, Tower AC"
-        ],
-        contactInfo: "Call us at +91 703 727 2027 for immediate AC repair service"
-    },
-    2: {
-        title: "AC Maintenance",
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        description: "Regular AC maintenance is essential for optimal performance, energy efficiency, and longevity of your air conditioner. Our comprehensive maintenance services include deep cleaning, performance checks, and preventive maintenance.",
-        features: [
-            "Deep cleaning of indoor & outdoor units",
-            "Coil cleaning with chemical wash",
-            "Gas pressure check & optimization",
-            "Filter cleaning & replacement",
-            "Drain pipe cleaning & unclogging",
-            "Performance efficiency testing",
-            "Annual Maintenance Contracts (AMC) available"
-        ],
-        contactInfo: "Schedule regular maintenance by calling +91 703 727 2027"
-    },
-    3: {
-        title: "Buy Old AC",
-        image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        description: "We purchase old, used, and non-working ACs at the best market prices. Our team evaluates your AC based on brand, age, condition, and capacity to offer you the highest possible price.",
+        title: "Buy Old/Used AC",
+        image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        description: "We purchase old, used, and non-working air conditioners at the best market prices in Mumbai. Instant cash payment with free pickup from your location.",
         features: [
             "Best price guarantee in Mumbai",
-            "Free pickup from your location",
-            "Instant cash payment",
-            "All brands and capacities",
+            "Free pickup from your home/office",
+            "Instant cash payment on the spot",
+            "All brands and capacities accepted",
             "Working and non-working ACs",
-            "10+ years of experience in AC buying",
+            "10+ years of experience",
             "Safe and transparent process"
         ],
         contactInfo: "Call +91 703 727 2027 for free evaluation and instant quote"
+    },
+    2: {
+        title: "Sell Refurbished AC",
+        image: "https://images.unsplash.com/photo-1560073258-3d84628b46f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        description: "Quality checked, professionally refurbished ACs with warranty. All popular brands available at 40-60% of original price with installation included.",
+        features: [
+            "6 months comprehensive warranty",
+            "Professional installation included",
+            "All popular brands available",
+            "40-60% cheaper than new ACs",
+            "Home delivery across Mumbai",
+            "7-day return policy",
+            "Thorough testing & servicing"
+        ],
+        contactInfo: "Call +91 703 727 2027 to get the best refurbished ACs"
+    },
+    3: {
+        title: "AC Exchange",
+        image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        description: "Trade-in your old AC for a refurbished one and save big! Get the best value for your old AC and upgrade to a better model at discounted prices.",
+        features: [
+            "Trade-in your old AC for better models",
+            "Get instant value for your old AC",
+            "Upgrade to energy-efficient models",
+            "Special discounts on exchange deals",
+            "Free installation with exchange",
+            "All brands and capacities available",
+            "No hidden charges"
+        ],
+        contactInfo: "Call +91 703 727 2027 to get exchange value for your old AC"
     }
 };
 
