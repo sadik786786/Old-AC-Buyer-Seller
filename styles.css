@@ -32,7 +32,7 @@
         }
         a {
             text-decoration: none;
-            color:white;
+            color: white;
         }
         h1, h2, h3, h4, h5 {
             font-family: 'Montserrat', sans-serif;
@@ -311,7 +311,7 @@
         .hero {
             padding: 180px 0 120px;
             background: linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.9)), 
-                        url('https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+                        url('./img/air.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -958,6 +958,4 @@
             .footer-container {
                 gap: 40px;
             }
-
         }
-
