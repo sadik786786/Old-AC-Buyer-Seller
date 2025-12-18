@@ -959,3 +959,306 @@
                 gap: 40px;
             }
         }
+        .container {
+            max-width: 900px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 82, 204, 0.1);
+            padding: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Decorative elements */
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(90deg, #2a6eff, #2ae0ff);
+        }
+        
+        .header-icon {
+            background-color: #e8f1ff;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+        
+        .header-icon i {
+            font-size: 32px;
+            color: #2a6eff;
+        }
+        
+        h1 {
+            color: #1a3b7a;
+            margin-bottom: 30px;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        
+        .form-section {
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            color: #2a4a8c;
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        /* Brand selection grid */
+        .brand-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+        
+        .brand-option {
+            border: 2px solid #e1e9f7;
+            border-radius: 12px;
+            padding: 18px 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background-color: white;
+            font-weight: 600;
+            color: #2a4a8c;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .brand-option:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(42, 110, 255, 0.1);
+            border-color: #2a6eff;
+        }
+        
+        .brand-option.selected {
+            background-color: #2a6eff;
+            color: white;
+            border-color: #2a6eff;
+        }
+        
+        .brand-option.selected::after {
+            content: '✓';
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background-color: rgba(255, 255, 255, 0.2);
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+        
+        .other-brand {
+            background-color: #f8faff;
+            border: 2px dashed #b8c9f0;
+        }
+        
+        .other-brand:hover {
+            border-color: #2a6eff;
+        }
+        
+        /* AC Type selection */
+        .ac-type-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .ac-option {
+            flex: 1;
+            min-width: 200px;
+            border: 2px solid #e1e9f7;
+            border-radius: 12px;
+            padding: 25px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background-color: white;
+            font-weight: 600;
+            color: #2a4a8c;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .ac-option:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(42, 110, 255, 0.1);
+            border-color: #2a6eff;
+        }
+        
+        .ac-option.selected {
+            background-color: #2a6eff;
+            color: white;
+            border-color: #2a6eff;
+        }
+        
+        .ac-option.selected::after {
+            content: '✓';
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background-color: rgba(255, 255, 255, 0.2);
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+        
+        /* Progress indicator */
+        .progress-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+            padding-top: 25px;
+            border-top: 1px solid #e8f1ff;
+        }
+        
+        .progress-indicator {
+            color: #2a6eff;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        .progress-bar {
+            flex-grow: 1;
+            height: 8px;
+            background-color: #e8f1ff;
+            border-radius: 4px;
+            margin: 0 20px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            width: 20%;
+            background: linear-gradient(90deg, #2a6eff, #2ae0ff);
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+        
+        .next-btn {
+            background: linear-gradient(90deg, #2a6eff, #2ae0ff);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 15px 35px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(42, 110, 255, 0.3);
+        }
+        
+        .next-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(42, 110, 255, 0.4);
+        }
+        
+        .next-btn:active {
+            transform: translateY(0);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .card {
+                padding: 30px 25px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            .brand-grid {
+                grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+                gap: 12px;
+            }
+            
+            .brand-option {
+                padding: 15px 8px;
+                font-size: 15px;
+            }
+            
+            .ac-type-options {
+                flex-direction: column;
+            }
+            
+            .ac-option {
+                min-width: 100%;
+            }
+            
+            .progress-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .progress-bar {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 15px;
+            }
+            
+            .card {
+                padding: 25px 20px;
+                border-radius: 16px;
+            }
+            
+            h1 {
+                font-size: 22px;
+            }
+            
+            .brand-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .header-icon {
+                width: 60px;
+                height: 60px;
+                margin-bottom: 20px;
+            }
+            
+            .header-icon i {
+                font-size: 26px;
+            }
+        }
+        
+        /* Animation for selections */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+        
+        .brand-option.selected,
+        .ac-option.selected {
+            animation: pulse 0.5s ease;
+        }
