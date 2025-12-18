@@ -11,6 +11,33 @@
     <meta name="keywords" content="old ac buyer, old ac seller, used ac buyer, used ac seller, second hand ac buyer, second hand ac seller, ac buyer in mumbai, ac seller in mumbai, old ac buyer in mumbai, trusted ac service mumbai, ac repair mumbai, ac installation mumbai, ac maintenance mumbai, ac servicing mumbai, doorstep ac service mumbai, ac gas filling mumbai, buy old split ac, sell old split ac, scrap ac buyer mumbai, ac disposal service mumbai">
 
 </head>
+    <style>
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .photo-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  /* Mobile view */
+  @media (max-width: 576px) {
+    .photo-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .photo-grid img {
+      height: 180px;
+    }
+  }
+</style>
 <body>
     <!-- Header & Navigation -->
     <header id="header">
@@ -230,6 +257,12 @@
         </div>
     </div>
 </section>
+    <div class="photo-grid">
+  <img src="./img/img1.jpg" alt="Photo 1">
+  <img src="./img/img2.jpg" alt="Photo 2">
+  <img src="./img/img3.jpg" alt="Photo 3">
+  <img src="./img/img4.jpg" alt="Photo 4">
+</div>
     <!-- Service Details Modals -->
     <div class="modal-overlay" id="serviceModalOverlay">
         <div class="service-modal" id="serviceModal">
@@ -362,7 +395,7 @@
                             </div>
                             <div class="contact-text">
                                 <h4>Call Us Anytime</h4>
-                                <p><a href="tel:+919076425356">+91 703 727 2027</a></p>
+                                <p><a href="tel:+919076425356">+91 907 642 5356</a></p>
                             </div>
                         </div>
                         
@@ -492,5 +525,6 @@
     <script src="./script.js"></script>
 </body>
 </html>
+
 
 
