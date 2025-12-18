@@ -155,7 +155,7 @@ serviceDetailBtns.forEach(btn => {
                 <h4 style="color: var(--primary); margin-bottom: 15px;">Contact For This Service:</h4>
                 <div style="background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: white; border-radius: 10px; padding: 25px; text-align: center;">
                     <p style="margin-bottom: 20px; font-size: 1.1rem;">${service.contactInfo}</p>
-                    <a href="tel:+917037272027" style="display: inline-block; background: white; color: var(--primary); padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: 700; transition: var(--transition);">
+                    <a href="tel:+919076425356" style="display: inline-block; background: white; color: var(--primary); padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: 700; transition: var(--transition);">
                         <i class="fas fa-phone-alt"></i> Call Now
                     </a>
                 </div>
@@ -207,3 +207,76 @@ window.addEventListener('load', () => {
     // Trigger scroll to check initial positions
     animateOnScroll();
 });
+ document.addEventListener('DOMContentLoaded', function() {
+            // Brand selection functionality
+            const brandOptions = document.querySelectorAll('.brand-option');
+            brandOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    // Remove selected class from all brand options
+                    brandOptions.forEach(brand => {
+                        brand.classList.remove('selected');
+                    });
+                    
+                    // Add selected class to clicked option
+                    this.classList.add('selected');
+                });
+            });
+            
+            // AC type selection functionality
+            const acOptions = document.querySelectorAll('.ac-option');
+            acOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    // Remove selected class from all AC options
+                    acOptions.forEach(ac => {
+                        ac.classList.remove('selected');
+                    });
+                    
+                    // Add selected class to clicked option
+                    this.classList.add('selected');
+                });
+            });
+            
+            // Next button functionality
+            const nextBtn = document.querySelector('.next-btn');
+            nextBtn.addEventListener('click', function() {
+                // Get selected brand
+                const selectedBrand = document.querySelector('.brand-option.selected').textContent;
+                
+                // Get selected AC type
+                const selectedAC = document.querySelector('.ac-option.selected').textContent;
+                
+                // Show alert with selections (in a real app, this would submit the form)
+                alert(`Selected Brand: ${selectedBrand}\nSelected AC Type: ${selectedAC}\n\nProceeding to next step...`);
+                
+                // In a real app, you would navigate to the next step here
+                // For demo, we'll just update the progress indicator
+                const progressFill = document.querySelector('.progress-fill');
+                const progressIndicator = document.querySelector('.progress-indicator');
+                
+                // Increase progress by 20% (to 40%)
+                progressFill.style.width = '40%';
+                progressIndicator.textContent = '2/5';
+                
+                // Reset after 3 seconds for demo purposes
+                setTimeout(() => {
+                    progressFill.style.width = '20%';
+                    progressIndicator.textContent = '1/5';
+                }, 3000);
+            });
+            
+            // Add hover effect for better UX
+            const allOptions = document.querySelectorAll('.brand-option, .ac-option');
+            allOptions.forEach(option => {
+                option.addEventListener('mouseenter', function() {
+                    if (!this.classList.contains('selected')) {
+                        this.style.backgroundColor = '#f0f5ff';
+                    }
+                });
+                
+                option.addEventListener('mouseleave', function() {
+                    if (!this.classList.contains('selected')) {
+                        this.style.backgroundColor = '';
+                    }
+                });
+            });
+        });
