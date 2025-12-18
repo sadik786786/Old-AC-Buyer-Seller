@@ -91,7 +91,7 @@ const serviceDetails = {
             "10+ years of experience",
             "Safe and transparent process"
         ],
-        contactInfo: "Call +91 703 727 2027 for free evaluation and instant quote"
+        contactInfo: "Call +91 907 642 5356 for free evaluation and instant quote"
     },
     2: {
         title: "Sell Refurbished AC",
@@ -106,7 +106,7 @@ const serviceDetails = {
             "7-day return policy",
             "Thorough testing & servicing"
         ],
-        contactInfo: "Call +91 703 727 2027 to get the best refurbished ACs"
+        contactInfo: "Call +91 907 642 5356 to get the best refurbished ACs"
     },
     3: {
         title: "AC Exchange",
@@ -121,7 +121,7 @@ const serviceDetails = {
             "All brands and capacities available",
             "No hidden charges"
         ],
-        contactInfo: "Call +91 703 727 2027 to get exchange value for your old AC"
+        contactInfo: "Call +91 907 642 5356 to get exchange value for your old AC"
     }
 };
 
@@ -280,3 +280,4 @@ window.addEventListener('load', () => {
                 });
             });
         });
+
