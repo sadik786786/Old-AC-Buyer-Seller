@@ -816,11 +816,14 @@
             </div>
             
             <div class="copyright">
-                <p>&copy; 2023 Old AC Buyer & Seller. All Rights Reserved. | Mumbai, Maharashtra, India</p>
+                <p>&copy; <span id="year"></span> Old AC Buyer & Seller. All Rights Reserved.</p>
                 <p>Contact: <a href="tel:+919076425356">+91 907 642 5356</a> | Email: <a href="mailto:Khizharansari2@gmail.com">Khizharansari2@gmail.com</a></p>
             </div>
         </div>
     </footer>
+  <script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
     <script src="./script.js"></script>
 </body>
 </html>
