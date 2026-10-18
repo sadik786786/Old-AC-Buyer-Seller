@@ -1,9 +1,58 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
-    <loc>https://www.oldacbuyers.in/</loc>
-    <lastmod>2026-09-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://oldacbuyers.in/</loc>
   </url>
+
+  <url>
+    <loc>https://oldacbuyers.in/andherieast.html</loc>
+  </url>
+  <url>
+    <loc>https://oldacbuyers.in/andheriwest.html</loc>
+  </url>
+  <url>
+    <loc>https://oldacbuyers.in/bandrawest.html</loc>
+  </url>
+  <url>
+    <loc>https://oldacbuyers.in/borivali.html</loc>
+  </url>
+  <url>
+    <loc>https://oldacbuyers.in/churchgate.html</loc>
+  </url>
+  <url>
+    <loc>https://oldacbuyers.in/dadar.html</loc>
+  </url>
+  <url>
+    <loc>https://oldacbuyers.in/goregaon.html</loc>
+  </url>
+  <url>
+    <loc>https://oldacbuyers.in/jogeshwari.html</loc>
+  </url>
+  <url>
+    <loc>https://oldacbuyers.in/juhu.html</loc>
+  </url>
+  <url>
+    <loc>https://oldacbuyers.in/kandivali.html</loc>
+  </url>
+  <url>
+    <loc>https://oldacbuyers.in/kurla.html</loc>
+  </url>
+  <url>
+    <loc>https://oldacbuyers.in/mahalaxmi.html</loc>
+  </url>
+  <url>
+    <loc>https://oldacbuyers.in/mahim.html</loc>
+  </url>
+  <url>
+    <loc>https://oldacbuyers.in/malad.html</loc>
+  </url>
+  <url>
+    <loc>https://oldacbuyers.in/miraroad.html</loc>
+  </url>
+  <url>
+    <loc>https://oldacbuyers.in/santacruzwest.html</loc>
+  </url>
+
 </urlset>
